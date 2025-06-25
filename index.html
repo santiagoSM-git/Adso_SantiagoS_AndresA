@@ -2,82 +2,120 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Ejemplo de Menú y Tabla</title>
+  <title>Rock Clásico</title>
   <style>
     body {
       font-family: Arial, sans-serif;
+      background-color: #1a1a1a;
+      color: #f0f0f0;
       margin: 0;
       padding: 0;
     }
+
+    header {
+      background-color: #222;
+      padding: 20px;
+      text-align: center;
+    }
+
     nav {
       background-color: #333;
       padding: 10px;
+      text-align: center;
     }
+
     nav a {
-      color: white;
+      color: #f0f0f0;
       text-decoration: none;
       margin: 0 15px;
       font-weight: bold;
     }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    .container {
+
+    main {
       padding: 20px;
     }
+
     table {
       width: 100%;
       border-collapse: collapse;
       margin-top: 20px;
     }
+
     th, td {
-      border: 1px solid #999;
+      border: 1px solid #555;
       padding: 10px;
       text-align: left;
     }
+
     th {
-      background-color: #f4f4f4;
+      background-color: #444;
+    }
+
+    tr:nth-child(even) {
+      background-color: #2a2a2a;
+    }
+
+    footer {
+      background-color: #222;
+      text-align: center;
+      padding: 10px;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
 
+  <header>
+    <h1>Bandas de Rock Clásico</h1>
+  </header>
+
   <nav>
     <a href="#">Inicio</a>
-    <a href="#">Productos</a>
-    <a href="#">Servicios</a>
+    <a href="#">Bandas</a>
+    <a href="#">Historia</a>
     <a href="#">Contacto</a>
   </nav>
 
-  <div class="container">
-    <h1>Tabla de estudiantes del sena</h1>
+  <main>
+    <h2>Tabla de Bandas</h2>
     <table>
-      <thead>
-        <tr>
-          <th>Nombre</th>
-          <th>Edad</th>
-          <th>Ciudad</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>santiago s</td>
-          <td>19</td>
-          <td>popayan</td>
-        </tr>
-        <tr>
-          <td>andres a</td>
-          <td>18</td>
-          <td>popayan </td>
-        </tr>
-        <tr>
-          <td>volveras </td>
-          <td>17</td>
-          <td>choco</td>
-        </tr>
-      </tbody>
+      <tr>
+        <th>Nombre</th>
+        <th>País</th>
+        <th>Año de Formación</th>
+        <th>Álbum Famoso</th>
+      </tr>
+      <tr>
+        <td>Queen</td>
+        <td>Reino Unido</td>
+        <td>1970</td>
+        <td>A Night at the Opera</td>
+      </tr>
+      <tr>
+        <td>Led Zeppelin</td>
+        <td>Reino Unido</td>
+        <td>1968</td>
+        <td>Led Zeppelin IV</td>
+      </tr>
+      <tr>
+        <td>The Beatles</td>
+        <td>Reino Unido</td>
+        <td>1960</td>
+        <td>Abbey Road</td>
+      </tr>
+      <tr>
+        <td>AC/DC</td>
+        <td>Australia</td>
+        <td>1973</td>
+        <td>Back in Black</td>
+      </tr>
     </table>
-  </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Rock Clásico. Todos los derechos reservados.</p>
+  </footer>
 
 </body>
 </html>
+
